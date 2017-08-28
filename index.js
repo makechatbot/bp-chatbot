@@ -20,6 +20,8 @@
 */
 
 module.exports = function(bp) {
+  bp.rivescript.setUtf8(true)
+
   // Listens for a first message (this is a Regex)
   // GET_STARTED is the first message you get on Facebook Messenger
   bp.hear(/GET_STARTED|안녕|하이|방가|헬로|hi/i, (event, next) => {
