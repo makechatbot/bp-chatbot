@@ -29,7 +29,7 @@ module.exports = function(bp) {
   // You can also pass a matcher object to better filter events
   bp.hear({
     type: /message|text/i,
-    text: /exit|bye|goodbye|quit|done|leave|stop/i
+    text: /바이|bye|goodbye|quit|done|leave|stop/i
   }, (event, next) => {
     event.reply('#goodbye', {
       // You can pass data to the UMM bloc!
